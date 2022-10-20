@@ -1,3 +1,4 @@
+import java.lang.StringBuilder;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Task1");
@@ -11,8 +12,8 @@ public class Main {
 
         System.out.println("Task3");
         fullName = "Иванов Семён Семёнович";
-        String fullNameCorrect=fullName.replace('ё','е');
-        System.out.println("Данные ФИО сотрудника- "+fullNameCorrect);
+        String fullNameReplace=fullName.replace('ё','е');
+        System.out.println("Данные ФИО сотрудника- "+fullNameReplace);
 
         System.out.println("Task3-1");
         char[] changeOfSymbol=fullName.toCharArray();
@@ -23,6 +24,9 @@ public class Main {
         }
         //String fullNameNew=new String(changeOfSymbol);
         System.out.println("Данные ФИО сотрудника- "+ new String(changeOfSymbol));
+
+        //StringBuilder x=new StringBuilder(fullName);
+        //System.out.println(x.replace('ё','е')); не заработало...
 
 
 
